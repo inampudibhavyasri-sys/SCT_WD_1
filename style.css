@@ -1,9 +1,8 @@
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
 }
 
 /* Navbar */
@@ -12,19 +11,18 @@ nav{
     position:fixed;
     top:0;
     width:100%;
-    padding:15px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:transparent;
+    padding:20px 50px;
     transition:0.4s;
     z-index:1000;
 }
 
-/* Scroll Effect */
+/* Scroll Navbar */
 
 nav.scrolled{
-    background:#111;
+    background:black;
 }
 
 /* Logo */
@@ -35,11 +33,11 @@ nav.scrolled{
     font-weight:bold;
 }
 
-/* Nav Links */
+/* Menu */
 
 .nav-links{
-    list-style:none;
     display:flex;
+    list-style:none;
 }
 
 .nav-links li{
@@ -47,13 +45,10 @@ nav.scrolled{
 }
 
 .nav-links a{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
     font-size:18px;
-    transition:0.3s;
 }
-
-/* Hover Effect */
 
 .nav-links a:hover{
     color:yellow;
@@ -70,36 +65,33 @@ nav.scrolled{
     justify-content:center;
     align-items:center;
 
-    text-align:center;
     color:white;
-    padding:20px;
+    text-align:center;
 }
 
 .hero h1{
-    font-size:55px;
-    margin-bottom:20px;
+    font-size:60px;
 }
 
 .hero p{
+    margin:20px 0;
     font-size:22px;
-    margin-bottom:25px;
 }
 
 .hero button{
-    padding:12px 30px;
+    padding:12px 25px;
     border:none;
     border-radius:5px;
-    background:white;
     cursor:pointer;
 }
 
-/* Content Sections */
+/* Content */
 
 .content{
     height:100vh;
-    padding:120px 40px;
+    padding:120px 50px;
     background:#f4f4f4;
-    border-bottom:2px solid #ddd;
+    border-bottom:2px solid #ccc;
 }
 
 .content h2{
@@ -108,24 +100,5 @@ nav.scrolled{
 }
 
 .content p{
-    font-size:22px;
-    line-height:1.8;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-    nav{
-        flex-direction:column;
-    }
-
-    .nav-links{
-        margin-top:10px;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
+    font-size:24px;
 }
