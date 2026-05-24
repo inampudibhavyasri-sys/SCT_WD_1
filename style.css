@@ -6,6 +6,7 @@
 }
 
 /* Navbar */
+
 nav {
     position: fixed;
     top: 0;
@@ -20,26 +21,29 @@ nav {
 }
 
 /* Scroll Effect */
+
 nav.scrolled {
-    background-color: #222;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background-color: #111;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo */
+
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
-/* Nav Links */
+/* Navigation Links */
+
 .nav-links {
     list-style: none;
     display: flex;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .nav-links a {
@@ -50,55 +54,77 @@ nav.scrolled {
 }
 
 /* Hover Effect */
+
 .nav-links a:hover {
     color: yellow;
+    border-bottom: 2px solid yellow;
 }
 
 /* Hero Section */
+
 .hero {
     height: 100vh;
     background: linear-gradient(to right, #4facfe, #00f2fe);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+
     text-align: center;
+    color: white;
     padding: 20px;
 }
 
 .hero h1 {
-    font-size: 50px;
-}
-
-.hero p {
-    margin: 20px 0;
-    font-size: 20px;
-}
-
-.hero button {
-    padding: 12px 25px;
-    border: none;
-    background: white;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Content */
-.content {
-    padding: 100px 40px;
-    background: #f4f4f4;
-    min-height: 100vh;
-}
-
-.content h2 {
+    font-size: 55px;
     margin-bottom: 20px;
 }
 
-/* Responsive */
+.hero p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Content Section */
+
+.content {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 120px 40px;
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+
 @media (max-width: 768px) {
+
     nav {
         flex-direction: column;
     }
@@ -108,6 +134,14 @@ nav.scrolled {
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .content h2 {
+        font-size: 30px;
     }
 }
