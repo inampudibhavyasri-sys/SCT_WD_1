@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -14,12 +15,13 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
+    padding:15px 30px;
+    background:transparent;
     transition:0.4s;
     z-index:1000;
 }
 
-/* Scroll Navbar */
+/* Scroll Effect */
 
 nav.scrolled{
     background:black;
@@ -29,25 +31,23 @@ nav.scrolled{
 
 .logo{
     color:white;
-    font-size:28px;
+    font-size:26px;
     font-weight:bold;
 }
 
-/* Menu */
+/* Navigation Links */
 
 .nav-links{
     display:flex;
     list-style:none;
-}
-
-.nav-links li{
-    margin-left:25px;
+    gap:20px;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
     font-size:18px;
+    transition:0.3s;
 }
 
 .nav-links a:hover{
@@ -65,12 +65,13 @@ nav.scrolled{
     justify-content:center;
     align-items:center;
 
-    color:white;
     text-align:center;
+    color:white;
+    padding:20px;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:55px;
 }
 
 .hero p{
@@ -85,13 +86,13 @@ nav.scrolled{
     cursor:pointer;
 }
 
-/* Content */
+/* Content Sections */
 
 .content{
-    height:100vh;
-    padding:120px 50px;
+    min-height:100vh;
+    padding:120px 40px;
     background:#f4f4f4;
-    border-bottom:2px solid #ccc;
+    border-bottom:2px solid #ddd;
 }
 
 .content h2{
@@ -100,5 +101,42 @@ nav.scrolled{
 }
 
 .content p{
-    font-size:24px;
+    font-size:22px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .content{
+        padding:100px 20px;
+    }
+
+    .content h2{
+        font-size:30px;
+    }
+
+    .content p{
+        font-size:18px;
+    }
 }
